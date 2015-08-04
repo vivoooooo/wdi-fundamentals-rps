@@ -21,13 +21,17 @@ function randomPlay() {
 /*           Write Your Code Below            */
 ////////////////////////////////////////////////
 
-function getPlayerMove(move) {
-if (move > 0) {
-     return "console.log(move)"
-} else getInput(move)
 
+function getPlayerMove(move) {
+if (move == "rock") {
+     return "rock";
+} else if (move == "scissors") {
+     return "scissors";
+}   else if  (move == "paper") {
+     return "paper";
+} else getInput(move) ;
 }
-    // Write an expression that operates on a variable called `move`
+ // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
     return /* Your Expression */;
